@@ -1,0 +1,296 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: #333;
+}
+
+.sec__ove {
+  width: 1450px;
+  height: 100vh;
+}
+
+.sec__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  padding: 40px 50px;
+  transform: scale(0.8);
+  list-style-type: none;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+
+.sec__box {
+  position: relative;
+  width: 500px;
+  height: 90vh;
+
+  background: rgba(255, 255, 255, 0.185);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 20px;
+  // overflow: hidden;
+  transform: scale(0.5);
+  cursor: pointer;
+}
+
+.act {
+  transform: scale(0.9);
+}
+
+.img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.sec__header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+.head__top-anim {
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.head__anim-box {
+  position: relative;
+  height: 2px;
+  background: #c0bebe75;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 1px;
+}
+
+.head__anim-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #fff;
+}
+
+.anim {
+  width: 0;
+  animation: anim-span 15s 0.2s both linear;
+}
+
+@keyframes anim-span {
+  100% {
+    width: 100%;
+    background: #fff;
+  }
+}
+
+.ava__box {
+  width: auto;
+  height: auto;
+}
+
+.ava__btn-user {
+  width: auto;
+  height: auto;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ava__user-img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.ava__user-name {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.ava__time {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.514);
+  margin: 0;
+}
+
+.ava__btn-box {
+  width: auto;
+  height: auto;
+}
+
+.ava__btn {
+  font-family: sans-serif;
+  font-size: 22px;
+  color: #fff;
+
+  border: none;
+  background: transparent;
+  margin: 0 5px;
+}
+
+.sec__input {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+.form {
+  position: relative;
+  width: auto;
+}
+
+.form__inp {
+  width: 85%;
+  height: auto;
+
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-right: 10px;
+
+  &::placeholder {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+}
+.form__btn {
+  font-size: 30px;
+  color: #fff;
+
+  border: none;
+  background: transparent;
+}
+
+.sec__box-left-btn {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translate(0, -50%);
+  width: 30px;
+  height: 30px;
+
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.075);
+  border-radius: 50%;
+  border: none;
+  margin-left: -20px;
+  transition: all 0.2s ease;
+  display: none;
+}
+
+.sec__box-right-btn {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translate(0, -50%);
+  width: 30px;
+  height: 30px;
+
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.075);
+  border-radius: 50%;
+  border: none;
+  margin-left: -20px;
+  transition: all 0.2s ease;
+  display: none;
+}
+
+.btn-hov {
+  &:hover {
+    background: rgba(255, 255, 255, 0.226);
+  }
+}
+
+.act-btn {
+  display: block;
+}
+
+.avatar-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  height: 110px;
+  border-radius: 50%;
+  // display: none;
+}
+
+.avatar-img-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid #d40063;
+    z-index: 2;
+  }
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.avatar__name {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  transform: translate();
+}
