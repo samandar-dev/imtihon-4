@@ -59,7 +59,7 @@ let count = 1;
 let n = 1;
 
 function myFunction() {
-  timeout = setTimeout(alertFunc, 3000);
+  timeout = setTimeout(alertFunc, 6000);
 }
 
 let sBox = document.querySelectorAll('.sec__box');
