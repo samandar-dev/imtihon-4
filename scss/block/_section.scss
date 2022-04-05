@@ -17,28 +17,38 @@
   height: 100%;
 
   padding: 40px 50px;
-  transform: scale(0.8);
   list-style-type: none;
   margin: 0;
   transition: all 0.5s ease;
 }
 
+.item {
+  padding: 0;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+  // background: rgba(255, 255, 255, 0.185);
+  border-radius: 10px;
+  // overflow: hidden;
+}
+
 .sec__box {
   position: relative;
-  width: 500px;
-  height: 90vh;
+  width: 300px;
+  height: 50vh;
 
   background: rgba(255, 255, 255, 0.185);
   border-radius: 10px;
   padding: 15px;
-  margin: 0 20px;
-  // overflow: hidden;
-  transform: scale(0.5);
+  margin: 0 10px;
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .act {
-  transform: scale(0.9);
+  width: 500px;
+  height: 80vh;
+  overflow: visible;
 }
 
 .img-box {
@@ -90,7 +100,7 @@
 
 .anim {
   width: 0;
-  animation: anim-span 15s 0.2s both linear;
+  animation: anim-span 5.8s 0.2s both linear;
 }
 
 @keyframes anim-span {
@@ -215,7 +225,6 @@
   border: none;
   margin-left: -20px;
   transition: all 0.2s ease;
-  display: none;
 }
 
 .sec__box-right-btn {
@@ -229,17 +238,16 @@
   font-size: 25px;
   line-height: 25px;
   color: #000;
-  background: rgba(255, 255, 255, 0.075);
+  background: rgba(255, 255, 255, 0.144);
   border-radius: 50%;
   border: none;
   margin-left: -20px;
   transition: all 0.2s ease;
-  display: none;
 }
 
 .btn-hov {
   &:hover {
-    background: rgba(255, 255, 255, 0.226);
+    background: rgba(255, 255, 255, 0.288);
   }
 }
 
@@ -252,10 +260,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  background-image: url("");
   width: auto;
   height: 110px;
   border-radius: 50%;
+  z-index: 10;
   // display: none;
 }
 
@@ -275,7 +284,7 @@
     height: 100px;
     border-radius: 50%;
     background: transparent;
-    border: 3px solid #d40063;
+    border: 3px solid #e95455;
     z-index: 2;
   }
 }
@@ -292,5 +301,34 @@
   font-weight: 600;
   color: #fff;
   text-align: center;
-  transform: translate();
 }
+
+// .mediya__box {
+//   width: 500px;
+//   height: 50vh;
+//   // overflow: hidden;
+// }
+
+// .med-box {
+//   width: 100%;
+//   height: auto;
+// }
+
+// .video {
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px;
+// }
+
+// .img {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .med-btns {
+//   position: relative;
+//   width: 20px;
+//   height: 20px;
+//   padding: 10px;
+//   z-index: 10;
+// }
